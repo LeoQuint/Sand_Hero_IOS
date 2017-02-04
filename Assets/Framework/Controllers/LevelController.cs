@@ -358,7 +358,6 @@ public class LevelController : MonoBehaviour {
         }
     }
 
-    //Sets everything up for replay (NEVER CALLED YET)
     public void Replay()
     {
         //SceneManager.LoadScene(1);

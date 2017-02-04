@@ -495,8 +495,9 @@ public class Player : MonoBehaviour {
         }
         foreach (Transform child in childs)
         {
-			Debug.Log (child.name);
-            child.GetComponent<Foods>().Death();
+			if (child.GetComponent<Foods> ()) {
+				child.GetComponent<Foods>().Death();
+			}            
             child.parent = null;
         }
         playerStatus = PlayerStatus.DEAD;

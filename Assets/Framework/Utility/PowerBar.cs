@@ -14,6 +14,9 @@ public class PowerBar : MonoBehaviour {
     float startTime;
 	// Use this for initialization
 	void Start () {
+		isRunning = false;         
+		hasLaunched = false;
+
         startTime = Time.time;
         slider = GetComponent<Slider>();
 	}
@@ -21,7 +24,6 @@ public class PowerBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-		Debug.Log (isRunning);
         //Ignore if not playing, has launched, or if not active yet 
 		if ( !isRunning ||hasLaunched)
             return;
@@ -35,6 +37,6 @@ public class PowerBar : MonoBehaviour {
 
 	public void Restart(){
 		hasLaunched = false;
-		isRunning = true;
+		isRunning = false;
 	}
 }

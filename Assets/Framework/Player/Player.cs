@@ -128,7 +128,7 @@ public class Player : MonoBehaviour {
     public int pepperCollected = 0;
     private bool isEndGame = false;
     private bool isMidflight = false;
-    bool intialTapHeldDown = false;             //Used to track if player is holding down on screen at game start
+    private bool intialTapHeldDown = false;             //Used to track if player is holding down on screen at game start
     private bool isFlipping = false;
 
     public static GameObject splatParticlesHolder;
@@ -200,9 +200,8 @@ public class Player : MonoBehaviour {
         {
             mDel();
         }
-
         //STATES: IF CHARGING 
-        if (playerStatus == PlayerStatus.CHARGING)
+       /* if (playerStatus == PlayerStatus.CHARGING)
         {
             //When player first holds down, track it and start the power bar
             if (!intialTapHeldDown && Input.GetButtonDown("Jump"))
@@ -218,8 +217,7 @@ public class Player : MonoBehaviour {
             }
 
             return;
-        }
-		Debug.Log ("Past");
+        }*/
         //STATES: PLAYING (OVERHEAD)
         if (playerStatus == PlayerStatus.OVERHEAD)
         {
@@ -406,6 +404,7 @@ public class Player : MonoBehaviour {
     }
     public void Jump()
     {
+		Debug.Log ("Jummp triggered");
         if (playerStatus != PlayerStatus.CHARGING)
         {
             return;
@@ -428,6 +427,16 @@ public class Player : MonoBehaviour {
             StartCoroutine(Wait(1f));
         
     }
+	public void HoldingLaunch()
+	{
+		Debug.Log ("Holding triggered");
+		if (playerStatus != PlayerStatus.CHARGING)
+		{
+			return;
+		}
+		powerBar.GetComponent<PowerBar> ().isRunning = true;
+	}
+
     void Flip()
     {
 
@@ -882,6 +891,7 @@ public class Player : MonoBehaviour {
         plateAndBread.SetActive(false);
         toaster.SetActive(true);
         isEndGame = false;
+		intialTapHeldDown = false;
         hasStarted = false;
         GameUI.SetActive(true);
         endMenu.SetActive(false);

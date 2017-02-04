@@ -370,12 +370,14 @@ public class LevelController : MonoBehaviour {
             GameObject.Destroy(child.gameObject);
 
         //Reset all values
+
         isGoingDown = false;
         downSpawnedHeight = 0;
         BuildLevel();
         SetCheckMarks(999);
         Player.instance.ResetValues();
         camScript.ResetValues();
+		isPlaying = true;
     }
 
 

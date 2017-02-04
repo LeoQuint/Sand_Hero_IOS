@@ -21,8 +21,9 @@ public class PowerBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+		Debug.Log (isRunning);
         //Ignore if not playing, has launched, or if not active yet 
-       if (!LevelController.instance.isPlaying | isRunning == false | hasLaunched)
+		if ( !isRunning ||hasLaunched)
             return;
 
         //Progress the slider bar 
@@ -30,5 +31,10 @@ public class PowerBar : MonoBehaviour {
         //Cap value 
         if (slider.value >= 1f)
             startTime = Time.time;
+	}
+
+	public void Restart(){
+		hasLaunched = false;
+		isRunning = true;
 	}
 }

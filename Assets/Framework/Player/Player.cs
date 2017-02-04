@@ -205,7 +205,7 @@ public class Player : MonoBehaviour {
         if (playerStatus == PlayerStatus.CHARGING)
         {
             //When player first holds down, track it and start the power bar
-            if (intialTapHeldDown == false && Input.GetButtonDown("Jump"))
+            if (!intialTapHeldDown && Input.GetButtonDown("Jump"))
             {
                 Debug.Log("PRIMING JUMP");
                 powerBar.gameObject.GetComponent<PowerBar>().isRunning = true; 
@@ -219,7 +219,7 @@ public class Player : MonoBehaviour {
 
             return;
         }
-
+		Debug.Log ("Past");
         //STATES: PLAYING (OVERHEAD)
         if (playerStatus == PlayerStatus.OVERHEAD)
         {
@@ -495,6 +495,7 @@ public class Player : MonoBehaviour {
         }
         foreach (Transform child in childs)
         {
+			Debug.Log (child.name);
             child.GetComponent<Foods>().Death();
             child.parent = null;
         }
@@ -876,7 +877,7 @@ public class Player : MonoBehaviour {
         scoreTracker.text = score.ToString();
         bonusMultiplier = 1;
         playerStatus = PlayerStatus.INTRO;
-        powerBar.GetComponent<PowerBar>().hasLaunched = false;
+		powerBar.GetComponent<PowerBar>().Restart();
         plateAndBread.SetActive(false);
         toaster.SetActive(true);
         isEndGame = false;

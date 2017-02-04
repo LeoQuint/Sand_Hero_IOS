@@ -43,6 +43,7 @@ public class MenuCTR : MonoBehaviour {
     public GameObject titleLogo;
     public GameObject settingsMenu;
 	public GameObject bottomBar;
+	public GameObject endGameOverlay;
 
     void Awake() 
     {
@@ -104,11 +105,11 @@ public class MenuCTR : MonoBehaviour {
         {
             settingsMenu.SetActive(false);
 			bottomBar.SetActive (true);
-			if (LevelController.instance.isPlaying)
-			{
+			if (LevelController.instance.isPlaying) {
 				bottomBar.SetActive (true);
 				mainMenuUI.SetActive (false);
 				btn_Toast.SetActive (true);
+				endGameOverlay.SetActive (true);
 			}
         }
         else
@@ -120,6 +121,7 @@ public class MenuCTR : MonoBehaviour {
 				bottomBar.SetActive (false);
 				mainMenuUI.SetActive (true);
 				btn_Toast.SetActive (false);
+				endGameOverlay.SetActive (false);
 			}
         }
 

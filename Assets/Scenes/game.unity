@@ -20141,7 +20141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11499772, guid: 2bd072f7e342776458b9dca1e95010b3, type: 2}
       propertyPath: selectedChar.Array.data[1]
-      value: Bagel
+      value: Frodough
       objectReference: {fileID: 0}
     - target: {fileID: 11499772, guid: 2bd072f7e342776458b9dca1e95010b3, type: 2}
       propertyPath: charSelectCam
@@ -20283,6 +20283,10 @@ Prefab:
       propertyPath: bottomBar
       value: 
       objectReference: {fileID: 1931553619}
+    - target: {fileID: 11499772, guid: 2bd072f7e342776458b9dca1e95010b3, type: 2}
+      propertyPath: endGameOverlay
+      value: 
+      objectReference: {fileID: 1734831178}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bd072f7e342776458b9dca1e95010b3, type: 2}
   m_IsPrefabParent: 0

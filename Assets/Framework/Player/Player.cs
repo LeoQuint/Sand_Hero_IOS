@@ -308,7 +308,7 @@ public class Player : MonoBehaviour {
 
                 break;
 
-            case "Bagel":
+            case "Frodough":
                 player.transform.FindChild("Mesh").GetComponent<MeshFilter>().mesh = meshes[1];
                 player.transform.FindChild("Mesh").GetComponent<MeshRenderer>().material = materials[1];
 

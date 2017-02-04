@@ -16,14 +16,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010649130144}
-  - 33: {fileID: 33000011279336024}
-  - 23: {fileID: 23000011960896258}
-  - 65: {fileID: 65000013139869906}
-  - 114: {fileID: 114000012672608964}
-  - 114: {fileID: 114000013425099266}
+  - component: {fileID: 4000010649130144}
+  - component: {fileID: 33000011279336024}
+  - component: {fileID: 23000011960896258}
+  - component: {fileID: 65000013139869906}
+  - component: {fileID: 114000012672608964}
+  - component: {fileID: 114000013425099266}
   m_Layer: 0
   m_Name: M_mayonese_pot
   m_TagString: Untagged
@@ -58,7 +58,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 7e6a870d7fe1ef54c8e10691dc84c132, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -66,7 +68,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -110,6 +112,7 @@ MonoBehaviour:
   clipPositions: 090000000a0000000b000000
   condimentSplash: {fileID: 1000010939674658, guid: 01f3c4f5971ede14fbb001be5df28be2,
     type: 2}
+  splash2D: {fileID: 1827085480405712, guid: c462d56603e414e6bab1aabf66d6cd76, type: 2}
 --- !u!114 &114000013425099266
 MonoBehaviour:
   m_ObjectHideFlags: 1

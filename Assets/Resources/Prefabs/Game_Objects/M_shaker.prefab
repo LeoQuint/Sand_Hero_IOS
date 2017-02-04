@@ -5,14 +5,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 443776}
-  - 33: {fileID: 3393592}
-  - 23: {fileID: 2316020}
-  - 114: {fileID: 11438772}
-  - 114: {fileID: 11488170}
-  - 65: {fileID: 6540876}
+  - component: {fileID: 443776}
+  - component: {fileID: 3393592}
+  - component: {fileID: 2316020}
+  - component: {fileID: 11438772}
+  - component: {fileID: 11488170}
+  - component: {fileID: 6540876}
   m_Layer: 8
   m_Name: M_shaker
   m_TagString: Untagged
@@ -47,7 +47,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 43994b5202738a441a4dc7490529cb5f, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -55,7 +57,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -112,6 +114,7 @@ MonoBehaviour:
   clipPositions: 0c0000000d0000000e000000
   condimentSplash: {fileID: 1000013970471854, guid: 53de50d2aef6c1841af3234e9731dc98,
     type: 2}
+  splash2D: {fileID: 1418078629474172, guid: 763ea53e40d5144638a6fa5923452439, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

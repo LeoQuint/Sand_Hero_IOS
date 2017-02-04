@@ -115,6 +115,7 @@ MonoBehaviour:
   condimentSplash: {fileID: 1000010341910504, guid: 51ad3c12d72532247854fadd95688bc1,
     type: 2}
   splash2D: {fileID: 1169501492144640, guid: 5f626e3796d324885a2d4f2a762b7bed, type: 2}
+  splashColor: {r: 0.8088235, g: 0.06693712, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

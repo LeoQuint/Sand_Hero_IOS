@@ -14,6 +14,7 @@ public class Foods : MonoBehaviour {
     public GameObject condimentSplash;
 
 	public GameObject splash2D;
+	public Color splashColor;
     
     void OnTriggerEnter(Collider other)
     {
@@ -60,6 +61,7 @@ public class Foods : MonoBehaviour {
                     
                     GameObject cs = Instantiate(condimentSplash, parentT.position, Quaternion.identity) as GameObject;
 					GameObject s = Instantiate (splash2D, transform.position, Quaternion.identity) as GameObject;
+					s.GetComponent<Renderer> ().material.color = splashColor;
 					s.transform.SetParent (parentT);
                     cs.transform.SetParent(parentT);
                     //cs.transform.rotation = transform.parent.rotation;

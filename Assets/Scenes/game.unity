@@ -12928,7 +12928,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 126858, guid: 8c35440efe9de7a46a8b62f60d8046d0, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 420340, guid: 8c35440efe9de7a46a8b62f60d8046d0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y

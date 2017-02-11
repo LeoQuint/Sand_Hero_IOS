@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 36da42613eed0458b9683ca08165d9af
+timeCreated: 1486832022
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BL_Leg_CTRL
+    100004: BL_Leg_JNT_bind
+    100006: BL_Leg_JNT_end
+    100008: BR_Leg_CTRL
+    100010: BR_Leg_JNT_bind
+    100012: BR_Leg_JNT_end
+    100014: FL_Leg_CTRL
+    100016: FL_Leg_JNT_bind
+    100018: FL_Leg_JNT_end
+    100020: FR_Leg_CTRL
+    100022: FR_Leg_JNT_bind
+    100024: FR_Leg_JNT_end
+    100026: Head_JNT_end
+    100028: Hip_CTRL
+    100030: Hip_JNT_bind
+    100032: L_Handle_CTRL
+    100034: L_Handle_JNT_bind
+    100036: L_Handle_JNT_end
+    100038: R_Handle_CTRL
+    100040: R_Handle_JNT_bind
+    100042: R_Handle_JNT_end
+    100044: Root_CTRL
+    100046: Root_JNT_non
+    100048: toaster
+    400000: //RootNode
+    400002: BL_Leg_CTRL
+    400004: BL_Leg_JNT_bind
+    400006: BL_Leg_JNT_end
+    400008: BR_Leg_CTRL
+    400010: BR_Leg_JNT_bind
+    400012: BR_Leg_JNT_end
+    400014: FL_Leg_CTRL
+    400016: FL_Leg_JNT_bind
+    400018: FL_Leg_JNT_end
+    400020: FR_Leg_CTRL
+    400022: FR_Leg_JNT_bind
+    400024: FR_Leg_JNT_end
+    400026: Head_JNT_end
+    400028: Hip_CTRL
+    400030: Hip_JNT_bind
+    400032: L_Handle_CTRL
+    400034: L_Handle_JNT_bind
+    400036: L_Handle_JNT_end
+    400038: R_Handle_CTRL
+    400040: R_Handle_JNT_bind
+    400042: R_Handle_JNT_end
+    400044: Root_CTRL
+    400046: Root_JNT_non
+    400048: toaster
+    4300000: toaster
+    7400000: idle
+    7400002: precharge
+    7400004: launch
+    7400006: charge
+    9500000: //RootNode
+    13700000: toaster
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_CTRL
+        weight: 1
+      - path: Root_CTRL/BL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/BR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/L_Handle_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/R_Handle_CTRL
+        weight: 1
+      - path: Root_JNT_non
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind/BL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind/BR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind/FL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind/FR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/Head_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind/L_Handle_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind/R_Handle_JNT_end
+        weight: 1
+      - path: toaster
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: precharge
+      takeName: Take 001
+      firstFrame: 62
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_CTRL
+        weight: 1
+      - path: Root_CTRL/BL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/BR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/L_Handle_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/R_Handle_CTRL
+        weight: 1
+      - path: Root_JNT_non
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind/BL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind/BR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind/FL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind/FR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/Head_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind/L_Handle_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind/R_Handle_JNT_end
+        weight: 1
+      - path: toaster
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: launch
+      takeName: Take 001
+      firstFrame: 115
+      lastFrame: 148
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_CTRL
+        weight: 1
+      - path: Root_CTRL/BL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/BR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/L_Handle_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/R_Handle_CTRL
+        weight: 1
+      - path: Root_JNT_non
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind/BL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind/BR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind/FL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind/FR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/Head_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind/L_Handle_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind/R_Handle_JNT_end
+        weight: 1
+      - path: toaster
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: charge
+      takeName: Take 001
+      firstFrame: 94
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_CTRL
+        weight: 1
+      - path: Root_CTRL/BL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/BR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FL_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/FR_Leg_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/L_Handle_CTRL
+        weight: 1
+      - path: Root_CTRL/Hip_CTRL/R_Handle_CTRL
+        weight: 1
+      - path: Root_JNT_non
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BL_Leg_JNT_bind/BL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/BR_Leg_JNT_bind/BR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FL_Leg_JNT_bind/FL_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/FR_Leg_JNT_bind/FR_Leg_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/Head_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/L_Handle_JNT_bind/L_Handle_JNT_end
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind
+        weight: 1
+      - path: Root_JNT_non/Hip_JNT_bind/R_Handle_JNT_bind/R_Handle_JNT_end
+        weight: 1
+      - path: toaster
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -66,6 +66,9 @@ public class Camera_Follow : MonoBehaviour {
         {
             return;
         }
+		if (!hasWatchedAnimation) {
+			return;
+		}
         if (mDel != null)
         {
             mDel();
@@ -171,12 +174,20 @@ public class Camera_Follow : MonoBehaviour {
         pScript.FlipBool(false);
         
     }
+	bool hasWatchedAnimation = false;
+	public IEnumerator WatchLaunchAnimation(float delay){
+		
+		yield return new WaitForSeconds (delay);
+		hasWatchedAnimation = true;
+	}
+
     void OverHeadFollow() 
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3(-0.03f, target.position.y + 3f, -7.5f), Mathf.Abs(playerRb.velocity.y) * Time.deltaTime);
     }
     public void ResetValues()
     {
+		hasWatchedAnimation = false;
         mDel = null;
         reachedMidFlip = false;
         asFliped = false;

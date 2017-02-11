@@ -409,6 +409,8 @@ public class Player : MonoBehaviour {
         {
             return;
         }
+		toaster.GetComponent<Animator>().SetBool("hasLaunched", true);
+		StartCoroutine( Camera.main.GetComponent<Camera_Follow> ().WatchLaunchAnimation (1f));
             launchBtn.gameObject.SetActive(false);
             playerStatus = PlayerStatus.GOINGUP;
             powerBar.GetComponent<PowerBar>().hasLaunched = true;
@@ -434,6 +436,8 @@ public class Player : MonoBehaviour {
 		{
 			return;
 		}
+		//Set the toaster to charge animation
+		toaster.GetComponent<Animator>().SetBool("isCharging", true);
 		powerBar.GetComponent<PowerBar> ().isRunning = true;
 	}
 
